@@ -1,0 +1,21 @@
+## 安装
+
+```
+npm install
+```
+
+# 编译 proto
+
+```
+npm run person_json
+```
+
+## 运行
+
+```
+> node src/index.js
+明文字符串：{"name":"张三","age":24,"game":[{"name":"传奇","type":"War"}],"sex":0}
+<Buffer 0a 06 e5 bc a0 e4 b8 89 10 18 1a 0d 0a 06 e4 bc a0 e5 a5 87 12 03 57 61 72 20 00>
+unSerialized info message:
+反序列化明文字符串：{"name":"张三","age":24,"game":[{"name":"传奇","type":"War"}],"sex":"male"}
+```

@@ -1,0 +1,25 @@
+//  ./node_modules/.bin/pbjs -t json proto/person.proto > src/person.json
+syntax = "proto3";
+package user;
+
+enum Sex{
+	male = 0;
+	female = 1;
+}
+
+message LoveGame{
+	string name = 1;
+	string type = 2;
+}
+
+message UserInfo{
+	string name = 1;
+	int32 age = 2;
+	repeated LoveGame game = 3;
+	Sex sex = 4;
+}
+
+service dothing {
+    rpc getGame(UserInfo) returns (LoveGame) {};
+    rpc getName(UserInfo) returns (UserInfo) {};
+}

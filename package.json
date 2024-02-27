@@ -1,0 +1,16 @@
+{
+	"name": "protoc_buffer_demo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/index.js",
+	"scripts": {
+		"person_json": "./node_modules/.bin/pbjs -t json proto/person.proto > src/person.json",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"protobufjs": "^6.11.4"
+	}
+}
